@@ -8,5 +8,5 @@ Windows用のファイル同期アプリケーションです。同期元と同�
 
 ### 動作条件
 *****
-1.windows vista以降
-2..NET Framework 4以上
+*windows vista以降
+*.NET Framework 4以上
