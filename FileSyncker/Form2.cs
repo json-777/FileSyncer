@@ -13,9 +13,18 @@ using System.Xml.Serialization;
 
 namespace FileSyncker
 {
+    /// <summary>
+    /// ファイルの種類を示す
+    /// </summary>
     public enum FileStatus
     {
+        /// <summary>
+        /// ディレクトリである
+        /// </summary>
         Directory,
+        /// <summary>
+        /// ファイルである
+        /// </summary>
         File
     }
     public enum SynckAction
@@ -941,8 +950,17 @@ namespace FileSyncker
 
     public class FileStatusStructure
     {
+        /// <summary>
+        /// ファイルのステータス
+        /// </summary>
         public FileStatus Status { get; set; }
+        /// <summary>
+        /// 同期元のファイルパス
+        /// </summary>
         public string SourcePath { get; set; }
+        /// <summary>
+        /// 同期後のファイルパス
+        /// </summary>
         public string DestPath 　{ get; set; }
 
         public FileStatusStructure(FileStatus s, string sPath, string dPath)
